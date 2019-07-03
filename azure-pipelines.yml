@@ -6,16 +6,9 @@ trigger:
 pool:
   name: Hosted Ubuntu 1604
 steps:
-- task: Bash@3
-  displayName: "create Jenkins disk"
-  inputs:
-    targetType: 'inline'
-    script: |
-      ls
 - task: AzureCLI@1
   displayName: 'Azure CLI '
   inputs:
     azureSubscription: 'DCD-CFTAPPS-SBOX (aks-infra-sbox)'
     scriptLocation: inlineScript
-    inlineScript: 'az resource list'
-
+    inlineScript: 'az disk create -g aks-infra-sbox-rg -n jenkins-disk --size-gb 10 --sku Premium_LRS --location uksouth'
