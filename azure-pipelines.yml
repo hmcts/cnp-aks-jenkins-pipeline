@@ -1,0 +1,14 @@
+# Docs:
+# https://aka.ms/yaml
+
+trigger:
+  - master
+pool:
+  name: Hosted Ubuntu 1604
+steps:
+- task: Bash@3
+  displayName: "create Jenkins disk"
+  inputs:
+    targetType: 'inline'
+    script: |
+      ls
