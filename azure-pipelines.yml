@@ -11,4 +11,4 @@ steps:
   inputs:
     azureSubscription: 'DCD-CFTAPPS-SBOX (aks-infra-sbox)'
     scriptLocation: inlineScript
-    inlineScript: 'az disk create -g aks-infra-sbox-rg -n jenkins-disk --size-gb 10 --sku Premium_LRS --location uksouth'
+    inlineScript: 'az disk create -g aks-infra-sbox-rg -n jenkins-disk --size-gb 500 --sku Premium_LRS --location uksouth'
