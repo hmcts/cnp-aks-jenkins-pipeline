@@ -12,3 +12,9 @@ steps:
     targetType: 'inline'
     script: |
       ls
+- task: AzureCLI@1
+  displayName: 'Azure CLI '
+  inputs:
+    azureSubscription: 'DCD-CFTAPPS-SBOX'
+    scriptLocation: inlineScript
+    inlineScript: 'az resource list'
