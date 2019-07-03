@@ -15,6 +15,7 @@ steps:
 - task: AzureCLI@1
   displayName: 'Azure CLI '
   inputs:
-    azureSubscription: 'DCD-CFTAPPS-SBOX'
+    azureSubscription: 'DCD-CFTAPPS-SBOX (aks-infra-sbox)'
     scriptLocation: inlineScript
     inlineScript: 'az resource list'
+
