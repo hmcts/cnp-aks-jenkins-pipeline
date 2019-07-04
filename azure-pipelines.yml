@@ -9,7 +9,7 @@ steps:
 - task: AzureCLI@1
   displayName: 'Azure CLI '
   inputs:
-    azureSubscription: 'DCD-CFTAPPS-SBOX (aks-infra-sbox)'
+    azureSubscription: 'DCD-CFTAPPS-SBOX'
     scriptLocation: inlineScript
     #inlineScript: 'az disk create -g aks-infra-sbox-rg -n jenkins-disk --size-gb 1024 --sku Premium_LRS --location uksouth'
     inlineScript: |
