@@ -13,7 +13,6 @@ steps:
     scriptLocation: inlineScript
     #inlineScript: 'az disk create -g aks-infra-sbox-rg -n jenkins-disk --size-gb 1024 --sku Premium_LRS --location uksouth'
     inlineScript: |
-      az disk create -g aks-infra-sbox-rg -n jenkins-disk --size-gb 1024 --sku Premium_LRS --location uksouth | jq .
-      SEC=$(echo value)
-      echo $SEC
+      diskID=$(az disk create -g aks-infra-sbox-rg -n jenkins-disk --size-gb 1024 --sku Premium_LRS --location uksouth | jq .id |sed 's/\"//g')
+      echo $diskID
   
