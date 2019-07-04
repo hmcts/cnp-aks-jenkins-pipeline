@@ -14,4 +14,5 @@ steps:
     inlineScript: |
       diskID=$(az disk create -g aks-infra-sbox-rg -n jenkins-disk --size-gb 1024 --sku Premium_LRS --location uksouth | jq .id |sed 's/\"//g')
       az keyvault secret set --vault-name "cftapps-sbox" --name "jenkins-disk-id" --value $diskID
+      echo "Jenkins disk ID stored in Vault: https://cftapps-sbox.vault.azure.net/secrets/jenkins-disk-id "
   
