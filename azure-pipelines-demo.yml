@@ -1,0 +1,12 @@
+name: DEMO Jenkins AKS disk creation
+trigger: none
+jobs:
+- template: job-template.yaml
+  parameters:
+    azureSubscription: 'DCD-CFTAPPS-DEMO'
+    keyvaultName: 'cftapps-demo'
+    ResourceGroup: 'aks-infra-demo-rg'
+    
+    
+
+    
