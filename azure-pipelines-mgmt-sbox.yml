@@ -1,0 +1,12 @@
+name: MGMT-SBOX Jenkins AKS disk creation
+trigger: none
+jobs:
+- template: job-template.yaml
+  parameters:
+    azureSubscription: 'DCD-MGMT-SBOX'
+    keyvaultName: 'mgmt-sbox'
+    ResourceGroup: 'aks-infra-mgmt-sbox-rg'
+    
+    
+
+    
