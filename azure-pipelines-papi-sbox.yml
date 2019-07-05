@@ -1,0 +1,12 @@
+name: PAPI-SBOX Jenkins AKS disk creation
+trigger: none
+jobs:
+- template: job-template.yaml
+  parameters:
+    azureSubscription: 'DCD-PAPI-SBOX'
+    keyvaultName: 'papi-sbox'
+    ResourceGroup: 'aks-infra-papi-sbox-rg'
+    
+    
+
+    
