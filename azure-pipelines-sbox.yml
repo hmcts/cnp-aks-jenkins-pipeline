@@ -1,0 +1,12 @@
+name: DCD-CFTAPPS-SBOX Jenkins AKS disk creation
+trigger: none
+jobs:
+- template: job-template.yaml
+  parameters:
+    azureSubscription: 'DCD-CFTAPPS-SBOX'
+    keyvaultName: 'cftapps-sbox'
+    ResourceGroup: 'aks-infra-sbox-rg'
+    
+    
+
+    
