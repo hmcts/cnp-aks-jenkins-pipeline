@@ -1,4 +1,4 @@
-name: DCD-CFTAPPS-SBOX Jenkins AKS disk creation
+name: SBOX Jenkins AKS disk creation
 trigger: none
 jobs:
 - template: job-template.yaml
