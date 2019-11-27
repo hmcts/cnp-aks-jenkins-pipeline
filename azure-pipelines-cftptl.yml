@@ -5,7 +5,7 @@ jobs:
   parameters:
     azureSubscription: 'DTS-CFTPTL-INTSVC'
     keyvaultName: 'cftptl-intsvc'
-    ResourceGroup: 'aks-infra-cftsbox-intsvc-rg'
+    ResourceGroup: 'aks-infra-cftptl-intsvc-rg'
     
     
 
