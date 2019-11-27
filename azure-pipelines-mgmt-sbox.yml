@@ -3,7 +3,7 @@ trigger: none
 jobs:
 - template: job-template.yaml
   parameters:
-    azureSubscription: 'DCD-MGMT-SBOX'
+    azureSubscription: 'DTS-CFTSBOX-INTSVC'
     keyvaultName: 'cftsbox-intsvc'
     ResourceGroup: 'aks-infra-cftsbox-intsvc-rg'
     
