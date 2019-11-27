@@ -1,10 +1,10 @@
-name: MGMT-SBOX Jenkins AKS disk creation
+name: CFTPTL Jenkins AKS disk creation
 trigger: none
 jobs:
 - template: job-template.yaml
   parameters:
-    azureSubscription: 'DCD-MGMT-SBOX'
-    keyvaultName: 'cftsbox-intsvc'
+    azureSubscription: 'DTS-CFTPTL-INTSVC'
+    keyvaultName: 'cftptl-intsvc'
     ResourceGroup: 'aks-infra-cftsbox-intsvc-rg'
     
     
